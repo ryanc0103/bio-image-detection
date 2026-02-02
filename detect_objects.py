@@ -45,7 +45,7 @@ gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 
 # enhancement
-gray_enh = enhance_image(gray, method="clahe")   # try: "clahe", "denoise", "median", "sharpen", "none"
+gray_enh = enhance_image(gray, method="clahe") 
 
 # continued pipeline for enhancement
 blur = cv2.GaussianBlur(gray_enh, (5, 5), 0)
